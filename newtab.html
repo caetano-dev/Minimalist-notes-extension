@@ -2,16 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
-    </style>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <title>New tab | Notes</title>
   </head>
   <body>
-    <textarea id="textarea" placeholder="type here..."></textarea>
+    <div class="container">
+      <div class="write-todo" id="write-todo">
+        <input
+          type="text"
+          class="todo-input"
+          id="todo-input"
+          placeholder="New note"
+        />
+        <button class="todo-button" type="submit" id="todo-button">+</button>
+      </div>
+      <div class="todo_container" id="todoContainer">
+        <ul class="todo-list" id="todo-list"></ul>
+      </div>
+    </div>
   </body>
-  <script type="text/javascript" src="./script.js"></script>
+  <script src="script.js"></script>
 </html>
