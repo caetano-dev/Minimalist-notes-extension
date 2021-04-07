@@ -1,20 +1,85 @@
-*{
-    padding: 0;
-    box-sizing: border-box;
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+* {
+  background-color: black;
+  font-family: "Ubuntu Mono", monospace;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+h2 {
+  color: #cccccc;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
-body,
-textarea {
-  font-family: "Ubuntu Mono", monospace;
-  background-color: black;
-  color: white;
+.write-todo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
 }
-textarea {
-  border: 1px solid rgb(14, 14, 14);
-  font-size: 2rem;
-  padding: 1rem;
+.todo-input,
+.todo-button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  transition: 0.5s;
+  margin-top: 2rem;
   outline: none;
-  width: 100%;
-  height: 99vh;
+  border: solid 1px #2e2f33;
+}
+
+.todo-input {
+  border: 2px solid rgb(10, 10, 10);
+  background-color: #0e0e0e;
+  color: white;
+  border-radius: 6px 0px 0px 6px;
+  width: 20rem;
+  height: 3rem;
+}
+
+.todo-button {
+  border: 1px solid rgb(10, 10, 10);
+  color: #b35110;
+  background-color: #0e0e0e;
+  border-radius: 0px 6px 6px 0px;
+}
+
+.todo-button:hover {
+  background-color: #0d0f0f;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+  margin: 0rem 20%;
+}
+.listItem {
+  word-break: break-all;
+  border-radius: 5px;
+  border: 1px solid rgb(10, 10, 10);
+  padding: 1rem;
+  margin: 0rem 2rem 0.5rem 2rem;
+  color: #cccccc;
+  background-color: black;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+a:link {
+  margin-left: 1rem;
+  text-decoration: none;
+  word-break: keep-all;
+  font-size: 15px;
+  padding: 0.3rem;
+  align-self: center;
+  border-radius: 3px;
+  color: #b35110;
+  border: 1px solid rgb(10, 10, 10);
+  transition: 0.5s;
+}
+
+a:hover {
+  color: rgb(233, 123, 33);
+  background-color: #0d0f0f;
 }
