@@ -53,6 +53,7 @@ h2 {
 ul {
   list-style: none;
   margin: 0rem 20%;
+  transition: 0.5s;
 }
 .listItem {
   word-break: break-all;
@@ -82,4 +83,10 @@ a:link {
 a:hover {
   color: rgb(233, 123, 33);
   background-color: #0d0f0f;
+}
+@media only screen and (max-width: 950px) {
+  ul {
+    list-style: none;
+    margin: 0rem 0.5rem;
+  }
 }
