@@ -1,14 +1,10 @@
 {
   "manifest_version": 2,
-  "name": "Minimalistic new tab notes",
+  "name": "Minimalist notes",
+  "description": "Allows you to add notes to your new tab",
   "version": "1.0.0",
   "chrome_url_overrides": { "newtab": "newtab.html" },
-  "icons": [
-    {
-      "src": "./assets/icon.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
-  ]
+  "browser_action": {
+    "default_icon": "./assets/icon.png"
+  }
 }
