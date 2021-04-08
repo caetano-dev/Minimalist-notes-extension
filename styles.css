@@ -85,6 +85,15 @@ a:hover {
   color: rgb(233, 123, 33);
   background-color: #0d0f0f;
 }
+a:visited {
+  color: #b35110;
+}
+
+a:hover,
+a:visited:hover {
+  color: rgb(233, 123, 33);
+  background-color: #0d0f0f;
+}
 @media only screen and (max-width: 950px) {
   ul {
     list-style: none;
