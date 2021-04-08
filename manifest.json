@@ -2,5 +2,13 @@
   "manifest_version": 2,
   "name": "Minimalistic new tab notes",
   "version": "1.0.0",
-  "chrome_url_overrides": { "newtab": "newtab.html" }
+  "chrome_url_overrides": { "newtab": "newtab.html" },
+  "icons": [
+    {
+      "src": "./assets/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
 }
